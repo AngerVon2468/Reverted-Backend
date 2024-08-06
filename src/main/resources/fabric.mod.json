@@ -21,13 +21,16 @@
 	"mixins": [
 		"reverted_backend.mixins.json"
 	],
+	"accessWidener": "reverted_backend.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.21",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
-	"suggests": {
-		"another-mod": "*"
+	"custom": {
+		"loom:injected_interfaces": {
+			"net/minecraft/class_1792": ["wiiu/mavity/reverted_backend/interfaces/INbtInjection"]
+		}
 	}
 }

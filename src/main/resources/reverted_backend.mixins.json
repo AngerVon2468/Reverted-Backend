@@ -3,7 +3,7 @@
 	"package": "wiiu.mavity.reverted_backend.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+      "ItemMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
