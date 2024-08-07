@@ -16,5 +16,6 @@ public class RevertedBackend implements ModInitializer {
 	public void onInitialize() {
 
 		RevertedBackend.LOGGER.info(NAME + " has started up!");
+		RevertedBackendDataComponentTypes.registerRevertedBackendDataComponentTypes();
 	}
 }

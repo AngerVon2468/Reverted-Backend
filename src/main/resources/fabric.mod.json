@@ -30,7 +30,7 @@
 	},
 	"custom": {
 		"loom:injected_interfaces": {
-			"net/minecraft/class_1792": ["wiiu/mavity/reverted_backend/interfaces/INbtInjection"]
+			"net/minecraft/class_1799": ["wiiu/mavity/reverted_backend/interfaces/INbtInjection"]
 		}
 	}
 }

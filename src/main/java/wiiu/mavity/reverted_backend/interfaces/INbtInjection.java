@@ -6,9 +6,21 @@ public interface INbtInjection {
 
     default NbtCompound getOrCreateNbt() {
         return new NbtCompound();
+    }
+
+    default void setNbt(NbtCompound nbt) {}
+
+    default NbtCompound getNbt() {
+        return new NbtCompound();
+    }
+
+    default NbtCompound backupGetNbt() {
+        return new NbtCompound();
+    }
+
+    default boolean hasNbt() {
+        return false;
     };
 
-    default void setNbt(NbtCompound nbt) {};
-
-    default void writeNbt(NbtCompound nbt) {};
+    default void removeSubNbt(String string) {}
 }
