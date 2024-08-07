@@ -20,7 +20,7 @@ public interface INbtInjection {
 
     default boolean hasNbt() {
         return false;
-    };
+    }
 
     default void removeSubNbt(String string) {}
 }

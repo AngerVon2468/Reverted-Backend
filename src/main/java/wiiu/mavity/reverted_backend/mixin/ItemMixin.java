@@ -62,9 +62,6 @@ public abstract class ItemMixin implements INbtInjection {
 	public void removeSubNbt(String string) {
 		if (this.nbt != null && this.nbt.contains(string)) {
 			this.nbt.remove(string);
-			if (this.nbt.isEmpty()) {
-				this.nbt = null;
-			}
 		}
 	}
 }
