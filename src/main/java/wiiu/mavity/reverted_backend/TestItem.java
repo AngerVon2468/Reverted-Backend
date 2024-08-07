@@ -37,9 +37,9 @@ public class TestItem extends Item {
     }
 
     public void addTest(@NotNull PlayerEntity player) {
-        ItemStack stack = player.getStackInHand(player.getActiveHand());
+        ItemStack stack = player.getMainHandStack();
 
-        NbtCompound nbtData = new NbtCompound();
+        NbtCompound nbtData = stack.getOrCreateNbt();
         nbtData.putString("reverted_backend.test_item.used", "test");
 
         stack.setNbt(nbtData);

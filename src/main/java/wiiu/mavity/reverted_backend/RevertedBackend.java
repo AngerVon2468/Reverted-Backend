@@ -1,8 +1,8 @@
 package wiiu.mavity.reverted_backend;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 
-import net.minecraft.SharedConstants;
 import net.minecraft.item.Item;
 import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
@@ -21,7 +21,7 @@ public class RevertedBackend implements ModInitializer {
 
 		RevertedBackend.LOGGER.info(NAME + " has started up!");
 		RevertedBackendDataComponentTypes.registerRevertedBackendDataComponentTypes();
-		if (SharedConstants.isDevelopment) {
+		if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
 			TestItem testItem = Registry.register(Registries.ITEM, new Identifier(RevertedBackend.MOD_ID, "test_item"), new TestItem(new Item.Settings()));
 		}
 	}
